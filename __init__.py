@@ -1,5 +1,3 @@
-from enum import auto
-from bokeh.core.enums import Align, SizingMode
 from flask import *
 
 app = Flask(__name__)

@@ -878,6 +878,8 @@ progress {
 .g-4,
 .gx-4 {
   --bs-gutter-x: 1.5rem;
+  margin: 0 auto;
+  display: flex;
 }
 
 .g-4,
@@ -888,6 +890,8 @@ progress {
 .g-5,
 .gx-5 {
   --bs-gutter-x: 3rem;
+  margin: 0 auto;
+  display: flex;
 }
 
 .g-5,
@@ -4056,7 +4060,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #64a19d;
+  color: #800000;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4066,10 +4070,10 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #50817e;
+  color: #800000;
 }
 .nav-link.disabled {
-  color: #6c757d;
+  color: #800000;
   pointer-events: none;
   cursor: default;
 }
@@ -4089,13 +4093,13 @@ textarea.form-control-lg {
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #800000;
   background-color: transparent;
   border-color: transparent;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #800000;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -7420,6 +7424,11 @@ textarea.form-control-lg {
 .mx-2 {
   margin-right: 0.5rem !important;
   margin-left: 0.5rem !important;
+  position: relative;
+}
+
+.mx-2 i {
+  position: absolute;
 }
 
 .mx-3 {
@@ -7959,7 +7968,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .text-reset {
@@ -11491,7 +11500,7 @@ body {
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
+  color: fade(#fff, 100%);
   outline: none;
   background-color: transparent;
 }
@@ -11534,15 +11543,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #800000;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #800000;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #800000;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #800000;
   }
 }
 
@@ -11562,7 +11571,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 30%, #000 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
