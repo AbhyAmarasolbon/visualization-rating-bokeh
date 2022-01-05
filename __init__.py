@@ -1,3 +1,5 @@
+from enum import auto
+from bokeh.core.enums import Align, SizingMode
 from flask import *
 
 app = Flask(__name__)
@@ -7,7 +9,7 @@ def bokeh_plot():
     import pandas as pd
     import numpy as np
 
-    from bokeh.layouts import layout
+    from bokeh.layouts import layout,WidgetBox
     from bokeh.plotting import figure, show
     from bokeh.models import HoverTool, Title, Div, RangeSlider, Spinner, Dropdown, CustomJS
     from bokeh.embed import components
@@ -63,12 +65,12 @@ def bokeh_plot():
         range_slider.js_link("value", p.x_range, "start", attr_selector=0)
         range_slider.js_link("value", p.x_range, "end", attr_selector=1)
 
-
+        controls = WidgetBox(range_slider, margin = (0, 0, 0, 457))
         # show the results
         layouts = layout(
             [
                 [p],
-                [range_slider],
+                [controls],
             ]
         )
 
