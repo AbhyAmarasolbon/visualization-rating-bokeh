@@ -50,9 +50,6 @@
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">Spiderman : Into the Spider-verse</h2>
                         <p class="text-white-50">
-                            {{div[0] | safe}}
-                            {{div[1] | safe}}
-                            {{div[2] | safe}}
                             Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
                             <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
                             The theme is open source, and you can use it for any purpose, personal or commercial.
@@ -60,7 +57,7 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="static/assets/img/Placebo_Wall_05.jpg" alt="..." />
+                {{div[2] | safe}}
             </div>
         </section>
          <!-- Wolf of the Wall Street -->
@@ -74,10 +71,10 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="static/assets/img/Placebo_Wall_05.jpg" alt="..." />
+                {{div[1] | safe}}
             </div>
         </section>
-                 <!-- Wolf of the Wall Street -->
+        <!-- Zootopia -->
          <section class="about-section text-center" id="zootopia">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -88,7 +85,7 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="static/assets/img/Placebo_Wall_05.jpg" alt="..." />
+                {{div[0] | safe}}
             </div>
         </section>
         <!-- Footer-->

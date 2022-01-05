@@ -22,8 +22,8 @@ def bokeh_plot():
                 title=title_mov,
                 x_axis_label="Rating", 
                 y_axis_label="Number of Reviewer", 
-                height=400,
-                sizing_mode="stretch_width")
+                width=1200,
+                sizing_mode="scale_both")
         p.add_layout(Title(text="Rating  Rotten Tomatoes",align = 'center'), 'above')
 
         p.vbar(x=movie['rating'], top=movie['val_rating'], width=0.5, bottom=0, color="red")
@@ -107,10 +107,9 @@ def bokeh_plot():
     script1,div1 = zootopia()
     script2,div2 = wolfows()
     script3,div3 = spiderman()
-    script4,div4 = example()
 
-    script = [script1,script2,script3,script4]
-    div = [div1,div2,div3,div4]
+    script = [script1,script2,script3]
+    div = [div1,div2,div3]
 
     return render_template('index.html',
                             script=script,
